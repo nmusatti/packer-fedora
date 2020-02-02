@@ -1,5 +1,5 @@
 {
-  "box_name": "centos8-vbga",
+  "box_name": "fedora-vbga",
   "disk_size": "32768",
   "guest_additions": "upload"
 }

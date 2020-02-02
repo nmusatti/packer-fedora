@@ -7,8 +7,7 @@ fi
 #
 # packages need to install VBGA
 #
-yum -y install bzip2 perl kernel-devel-`uname -r` epel-release gcc
-yum -y install dkms
+dnf -y install bzip2 perl kernel-devel-`uname -r` gcc dkms
 
 VBOX_VERSION=$(cat /home/vagrant/.vbox_version)
 cd /tmp

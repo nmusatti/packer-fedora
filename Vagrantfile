@@ -3,11 +3,11 @@
 #
 
 Vagrant.configure(2) do |config|
-    config.vm.define 'centos8-bare' do |centos|
-        centos.vm.box = 'centos8-bare'
-        centos.vm.synced_folder '.', '/vagrant'
-        centos.vm.provider 'virtualbox' do |vb|
-            vb.name = 'centos8-bare'
+    config.vm.define 'fedora-bare' do |fedora|
+        fedora.vm.box = 'fedora-bare'
+        fedora.vm.synced_folder '.', '/vagrant'
+        fedora.vm.provider 'virtualbox' do |vb|
+            vb.name = 'fedora-bare'
             vb.cpus = 2
             vb.memory = '1024'
         end
