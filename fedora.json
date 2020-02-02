@@ -1,10 +1,10 @@
 {
-  "description": "Build base CentOS 8 x86_64",
+  "description": "Build base Fedora x86_64",
   "variables": {
       "guest_additions": "disable",
-      "iso_name": "CentOS-8.1.1911-x86_64-boot.iso",
-      "iso_path": "/sw/centos",
-      "iso_url": "https://mirrorlist.centos.org/pub/centos/8.1.1911/isos/x86_64/CentOS-8.1.1911-x86_64-boot.iso",
+      "iso_name": "Fedora-Server-netinst-x86_64-31-1.9.iso",
+      "iso_path": "/sw/fedora",
+      "iso_url": "https://download.fedoraproject.org/pub/fedora/linux/releases/31/Server/x86_64/iso/Fedora-Server-netinst-x86_64-31-1.9.iso",
       "kickstart": "kickstart.cfg",
       "proxy": "{{ env `http_proxy` }}"
   },
@@ -43,7 +43,7 @@
         "{{ user `iso_path` }}/{{ user `iso_name` }}",
         "{{ user `iso_url` }}"
       ],
-      "iso_checksum": "7fea13202bf2f26989df4175aace8fdc16e1137f7961c33512cbfad844008948",
+      "iso_checksum": "5be8debd3e8fb4e86b9fbf67c7eb66ea598d2b7ad0c7ba8d505ce88067b43444",
       "iso_checksum_type": "sha256",
 
       "ssh_username": "vagrant",
