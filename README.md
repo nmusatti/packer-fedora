@@ -1,5 +1,5 @@
-# packer-centos8
-A [Packer](https://www.packer.io/) template to build [CentOS 8](https://www.centos.org/) [Vagrant](https://www.vagrantup.com/)
+# packer-fedora
+A [Packer](https://www.packer.io/) template to build [Fedora](https://getfedora.org/) [Vagrant](https://www.vagrantup.com/)
 base boxes for [VirtualBox](https://www.virtualbox.org/).
 
 This project supports the creation of the following kind of base boxes:
@@ -8,13 +8,13 @@ This project supports the creation of the following kind of base boxes:
 
 The `bare` base box may be built with the following command:
 
-    packer build -var-file linux.json -var-file bare.json centos.json
+    packer build -var-file linux.json -var-file bare.json fedora.json
 
 Customizable variables may be provided on the command line or by means of variable files. Note that the `linux.json` var file
 reflects my personal conventions on where to keep local installation images, you may want to provide your own location. This will
-result in a `centos8-bare.box` file being created, which may be installed with the following command:
+result in a `fedora-bare.box` file being created, which may be installed with the following command:
 
-    vagrant box add -f --name centos8-bare centos8-bare.box
+    vagrant box add -f --name fedora-bare fedora-bare.box
 
 To build the `vbga` base box, replace `bare` with `vbga` in the commands above.
 
