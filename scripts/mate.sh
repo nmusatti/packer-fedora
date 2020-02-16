@@ -1,2 +1,2 @@
 dnf update -y
-dnf group install -y "MATE Desktop"
+dnf group install -y --allowerasing "MATE Desktop"

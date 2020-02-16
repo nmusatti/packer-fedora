@@ -3,4 +3,5 @@
 /fix.*
 /output-vagrant/
 /packer_cache/
-
+/fedora-gui/
+/fedora-mate/
