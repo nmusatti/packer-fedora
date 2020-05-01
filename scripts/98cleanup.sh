@@ -3,5 +3,5 @@ set -ux
 #
 # clean caches
 #
-yum -y clean all
+dnf -y clean all
 
