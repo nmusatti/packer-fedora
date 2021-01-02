@@ -1,2 +1,2 @@
-packer.io build -var-file linux.json -var-file vbga.json fedora.json && \
+packer build -var-file linux.json -var-file vbga.json fedora.json && \
   vagrant box add -f --name fedora-vbga fedora-vbga.box
